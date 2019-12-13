@@ -25,7 +25,7 @@ where mov_year < 2020;
 -- Question 5: Write a query in SQL to find the movie which was released in the year 1999
 select mov_title, mov_year
 from movie
-where mov_year = '2009';
+where mov_year = '199s9';
 
 -- Question 6: Write a query in SQL to return the name of all reviewers and name of movies together in a single list
 select mov_id, mov_title, rev_name
@@ -51,8 +51,4 @@ where num_o_ratings is null;
 
 -- Question 10: Write a query in SQL to find the name of movie and director (first and last names) who directed a
 -- movie that casted a role for 'Eyes Wide Shut'
-select mov_title, dir_fname, dir_lname
-from movie 
-join movie_direction using (mov_id)
-join director using(dir_id)
-where mov_title = 'Eyes Wide Shut';
+ 
